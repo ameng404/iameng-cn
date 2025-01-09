@@ -21,7 +21,7 @@ jobs:
           node-version: "20.x"
 
       - name: Build project
-        run: npm install && npm build
+        run: npm i -g pnpm && pnpm install && pnpm build
 
       - name: Upload COS
         uses: TencentCloud/cos-action@v1
