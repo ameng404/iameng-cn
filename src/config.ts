@@ -7,21 +7,21 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'Ameng`s Blog',
-  subtitle: 'Ameng`s Site',
-  lang: 'zh_CN',         // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
+  title: '阿猛的日常',
+  subtitle: '科技改变世界，技术成就未来！',
+  lang: 'zh_CN',        // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
   themeColor: {
-    hue: 250,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
-    fixed: false,     // Hide the theme color picker for visitors
+    hue: 250,           // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
+    fixed: false,       // Hide the theme color picker for visitors
   },
   banner: {
     enable: false,
-    src: 'assets/images/demo-banner.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-    position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+    src: '/assets/banner.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    position: 'center',          // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
-      enable: false,         // Display the credit text of the banner image
-      text: '',              // Credit text to be displayed
-      url: ''                // (Optional) URL link to the original artwork or artist's page
+      enable: false,             // Display the credit text of the banner image
+      text: '',                  // Credit text to be displayed
+      url: ''                    // (Optional) URL link to the original artwork or artist's page
     }
   },
   toc: {
@@ -57,20 +57,15 @@ export const profileConfig: ProfileConfig = {
   links: [
     {
       name: 'Email',
-      icon: 'material-symbols:mail-sharp',       // Visit https://icones.js.org/ for icon codes
-                                        // You will need to install the corresponding icon set if it's not already included
-                                        // `pnpm add @iconify-json/<icon-set-name>`
+      icon: 'material-symbols:mail-sharp',      // Visit https://icones.js.org/ for icon codes
+                                                // You will need to install the corresponding icon set if it's not already included
+                                                // `pnpm add @iconify-json/<icon-set-name>`
       url: 'mailto:ameng404@qq.com',
-    },
-    {
-      name: 'QQ',
-      icon: 'fa6-brands:qq',
-      url: 'https://store.steampowered.com',
     },
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
-      url: 'https://github.com/saicaca/fuwari',
+      url: 'https://github.com/ameng404',
     },
   ],
 }
